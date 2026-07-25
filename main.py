@@ -54,4 +54,3 @@ async def setup_hook():
     await bot.load_extension("commands.help")
 
 bot.run(TOKEN)
-bot.run(TOKEN)
