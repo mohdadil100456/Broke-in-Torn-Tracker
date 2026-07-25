@@ -51,6 +51,6 @@ await ctx.send(embed=embed)
 @bot.event
 
 async def setup_hook():
-    await bot.load_extension("commands.help")
+        await bot.load_extension("commands.help")
 
 bot.run(TOKEN)
