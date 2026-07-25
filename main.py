@@ -49,6 +49,7 @@ async def player(ctx, player_id: int):
 await ctx.send(embed=embed)
 
 @bot.event
+
 async def setup_hook():
     await bot.load_extension("commands.help")
 
