@@ -47,5 +47,11 @@ async def player(ctx, player_id: int):
     embed.add_field(name="Status", value=data["status"]["description"])
 
     await ctx.send(embed=embed)
+await ctx.send(embed=embed)
 
+@bot.event
+async def setup_hook():
+    await bot.load_extension("commands.help")
+
+bot.run(TOKEN)
 bot.run(TOKEN)
