@@ -46,7 +46,6 @@ async def player(ctx, player_id: int):
     embed.add_field(name="Rank", value=data["rank"])
     embed.add_field(name="Status", value=data["status"]["description"])
 
-    await ctx.send(embed=embed)
 await ctx.send(embed=embed)
 
 @bot.event
